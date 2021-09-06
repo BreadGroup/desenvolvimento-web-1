@@ -2,7 +2,7 @@
   "name": "desenvolvimento-web-1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://IsaqueNunes.github.io/desenvolvimento-web-1",
+  "homepage": "http://BreadGroup.github.io/desenvolvimento-web-1",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
