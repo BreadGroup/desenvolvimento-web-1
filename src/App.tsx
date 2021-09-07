@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import { ThemeProvider } from "styled-components";
 
@@ -18,20 +18,20 @@ function App() {
 
   return (
     <ThemeProvider theme={ currentTheme }>
-      <BrowserRouter>
+      <HashRouter>
         <GlobalStyle />
 
         <Header themeName={themeName} setThemeName={setThemeName} />
 
-        <Routes>
+        <Routes basename={process.env.PUBLIC_URL + '/#'}>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
-
+    
         {/* <Footer /> */}
 
-      </ BrowserRouter>
+      </ HashRouter>
     </ThemeProvider>
   );
 }
