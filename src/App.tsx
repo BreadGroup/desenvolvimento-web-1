@@ -1,38 +1,24 @@
-import React, { useState } from 'react';
-import { HashRouter, Routes, Route } from "react-router-dom";
+import Box from '@mui/material/Box';
+import React from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
-import { ThemeProvider } from "styled-components";
-
-import GlobalStyle from './styles/GlobalStyles';
-
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import AboutUs from "./pages/AboutUs";
-
-import { ThemeName, themes } from './styles/themes';
+import AboutUs from './pages/AboutUs';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Header from 'components/Header';
 
 function App() {
-  const [ themeName, setThemeName ] = useState<ThemeName>('light');
-  const currentTheme = themes[themeName];
-
   return (
-    <ThemeProvider theme={ currentTheme }>
+    <Box sx={{ display: 'flex' }}>
       <HashRouter>
-        <GlobalStyle />
-
-        <Header themeName={themeName} setThemeName={setThemeName} />
-
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contactus" element={<Contact />} />
           <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
-
-        {/* <Footer /> */}
-
-      </ HashRouter>
-    </ThemeProvider>
+      </HashRouter>
+    </Box>
   );
 }
 
