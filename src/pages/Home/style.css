@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .home-section {
+    @apply py-2 flex flex-col;
+  }
+
+  .home-section-title {
+    @apply text-3xl;
+  }
+
+  .home-section-content {
+    @apply text-base flex flex-col-reverse;
+  }
+  .home-subsection-title {
+    @apply text-xl;
+  }
+
+  .chemisty-structure {
+    @apply w-11/12;
+  }
+
+  figure {
+    @apply flex flex-col justify-center items-center;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "desenvolvimento-web",
+  "version": "0.0.0",
+  "license": "MIT",
+  "homepage": ".",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.4",
+    "history": "^5.1.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-router": "^6.1.1",
+    "react-router-dom": "^6.1.1"
+  },
+  "devDependencies": {
+    "@types/history": "^4.7.9",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@vitejs/plugin-react": "^1.0.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "react-icons": "^4.3.1",
+    "tailwindcss": "^2.2.19",
+    "typescript": "^4.3.2",
+    "vite": "^2.6.4"
+  }
+}
